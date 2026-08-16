@@ -36,7 +36,7 @@ function ExamsPage() {
       {
         id: uid(),
         name: subjectName.trim(),
-        color: COLORS[subjects.length % COLORS.length],
+        color: COLORS[subjects.length % COLORS.length] ?? "#2f7bff",
         allocatedMinutes: 180,
         topics: [],
       },
