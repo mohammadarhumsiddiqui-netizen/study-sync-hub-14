@@ -26,11 +26,16 @@ export function writeStored<T>(key: string, value: T) {
   if (typeof window === "undefined") return;
   try {
     window.localStorage.setItem(key, JSON.stringify(value));
-    window.dispatchEvent(new CustomEvent("studysync:store", { detail: key }));
+    // Notify other hooks after the current render/commit finishes.
+    window.setTimeout(
+      () => window.dispatchEvent(new CustomEvent("studysync:store", { detail: key })),
+      0,
+    );
   } catch {
     /* storage full or blocked — ignore */
   }
 }
+
 
 /**
  * SSR-safe localStorage state. The value starts as `initial` on the server and
