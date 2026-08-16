@@ -124,6 +124,12 @@ Instead of managing studies through multiple applications, students can use Stud
 
 ---
 
+## 🚀 Live Link
+
+study-sync-hub-14.vercel.app
+
+---
+
 ### 👨‍💻 Developed By
 
 **M. Arhum Siddiqui & Mohammad Ayyan Imran**
