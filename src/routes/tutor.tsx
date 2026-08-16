@@ -20,7 +20,7 @@ export const Route = createFileRoute("/tutor")({
 const WELCOME: ChatMessage = {
   id: "welcome",
   role: "tutor",
-  text: "Hi! I'm your Study Sync tutor.\nAsk me an equation, a science concept, or “plan my revision” and I'll walk you through it step by step.",
+  text: "Hi! I am your Study Sync tutor.\nAsk me an equation, a science concept, or “plan my revision” and I'll walk you through it step by step.",
 };
 
 function TutorPage() {

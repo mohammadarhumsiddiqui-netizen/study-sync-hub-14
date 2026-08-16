@@ -86,7 +86,7 @@ function DashboardPage() {
     <AppShell>
       <PageHeader
         eyebrow={new Date().toLocaleDateString(undefined, { weekday: "long", day: "numeric", month: "short" })}
-        title={`Hey ${user?.name?.split(" ")[0] ?? "student"} 👋`}
+        title={`Hey ${user?.name?.split(" ")[0] ?? "student"}`}
         subtitle={`${todaysTasks.filter((t) => !t.done).length} tasks left today · ${doneToday}/${goalMinutes} focus minutes`}
       />
 
@@ -280,7 +280,7 @@ function StudyTimer({ onComplete }: { onComplete: (minutes: number) => void }) {
       completedRef.current = true;
       setRunning(false);
       onComplete(minutes);
-      ringReminder("Study block complete 🎉", `${minutes} minutes logged. Take a 5 minute break.`);
+      ringReminder("Study block complete", `${minutes} minutes logged. Take a 5 minute break.`);
     }
   }, [remaining, running, minutes, onComplete]);
 

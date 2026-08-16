@@ -92,7 +92,7 @@ function RoutinePage() {
             style={{ marginTop: 8 }}
             onClick={async () => {
               await askNotificationPermission();
-              ringReminder("Reminders enabled 🔔", "Study Sync will ring and notify you on time.");
+              ringReminder("Reminders enabled", "Study Sync will ring and notify you on time.");
             }}
           >
             Test sound & notification
