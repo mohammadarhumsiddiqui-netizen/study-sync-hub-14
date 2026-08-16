@@ -1,214 +1,132 @@
-# Study Sync Hub (14)
+# 📚 Study Sync
 
-I am a professional senior software engineer
+### 🎓 A Modern Student Productivity & Academic Management Platform
 
-Build a polished student productivity website called "Study Sync".
+**Study Sync** is a modern, student-focused web application designed to help students organize their academic life in one place. It brings tasks, subjects, exams, study routines, reminders, and focus tracking together in a clean and easy-to-use interface.
 
-I have designed Study Sync as a high-fidelity mobile-first experience tailored for modern students. The product combines academic management with personal well-being.
+---
 
-DESIGN DIRECTION
+## 📌 Project Title
 
-Use a premium dark-mode aesthetic throughout the application.
+**Study Sync — Student Productivity & Academic Management Web App**
 
-Visual style:
+---
 
-Dark background
+## 👥 Team Members
 
-Electric Blue accent color
+* **M. Arhum Siddiqui**
+* **Mohammad Ayyan Imran**
 
-Glassmorphism cards
+---
 
-Soft borders and subtle shadows
+## 🎯 Problem Statement
 
-Modern rounded UI elements
+Students often have to manage their assignments, exams, study schedules, subjects, and daily academic activities using different tools. This can make it difficult to stay organized and keep track of important deadlines.
 
-Clean typography
+**Study Sync** solves this problem by providing a centralized platform where students can manage their academic activities, organize their study routine, and monitor their productivity from a single application.
 
-Strong visual hierarchy
+---
 
-Smooth hover and transition effects
+## ✨ Features
 
-Professional, minimal, premium appearance
+### 📊 Student Dashboard
 
-Mobile/Dekstop first responsive design
+Provides a quick overview of the student's academic activities and progress.
 
-The layout should also adapt well to tablet and desktop screens
+### ✅ Task Management
 
-MAIN FEATURES
+Students can create, manage, and complete their study-related tasks.
 
-ONBOARDING / SIGN-IN
+### 📚 Subject Management
 
-Create a clean welcome/sign-in experience that introduces Study Sync and collects basic student information.
+Allows students to organize and manage their academic subjects.
 
-DASHBOARD
+### 📝 Exam Management
 
-Create a central student dashboard containing:
+Helps students keep track of upcoming exams and important examination information.
 
-Today's homework/tasks
+### 🗓️ Study Routine
 
-Homework timers
+Students can organize their daily study activities and create a structured routine.
 
-Visual goal progress bars
+### 🔔 Reminders
 
-Upcoming exams
+Helps students keep track of important academic activities and deadlines.
 
-Study progress
+### 🤖 AI Tutor
 
-Health/routine reminders
+Provides an interactive interface designed to assist students with their studies.
 
-Prayer reminders
+### ⏱️ Focus Tracking
 
-Quick access to the AI Study Tutor
+Allows students to track their focused study time and monitor their productivity.
 
-EXAM MASTERY
+### 👤 Student Profile
 
-Create an exam/syllabus management section where students can:
+Stores basic student information within the application.
 
-Add subjects
+### 💾 Local Data Storage
 
-Add syllabus topics
+Application data is stored locally in the user's browser using **localStorage**.
 
-Track syllabus completion percentage
+### 🌙 Modern Dark Interface
 
-View subject progress
+A clean, modern dark-themed interface designed specifically for students.
 
-Allocate study time to subjects
+---
 
-See upcoming exams
+## 🛠️ Tech Used
 
-ROUTINE & HEALTH
+| Technology          | Role                                              |
+| ------------------- | ------------------------------------------------- |
+| **React**           | Builds the user interface and reusable components |
+| **TypeScript**      | Provides type-safe development                    |
+| **TanStack Start**  | Application framework                             |
+| **TanStack Router** | Handles routing and page navigation               |
+| **Tailwind CSS**    | Provides responsive styling and UI design         |
+| **shadcn/ui**       | Provides reusable UI components                   |
+| **Radix UI**        | Provides accessible UI primitives                 |
 
-Create a dedicated routine section with:
+---
 
-Daily tasks
+## 💾 Data Storage
 
-Exercise challenges
+The current version of Study Sync uses **Browser Local Storage** instead of a separate database.
 
-Prayer reminders
+The application stores information such as:
 
-Custom reminders
+* Tasks
+* Subjects
+* Exams
+* Study routines
+* Reminders
+* Student profile
+* Chat data
+* Focus time
 
-Daily progress tracking
+This allows the application to work without requiring a separate database or backend server for the current version.
 
-AI STUDY TUTOR
+---
 
-Create a persistent AI Study Tutor interface accessible from the application.
+## 🚀 Project Goal
 
-Use a clean chat-style interface where students can type questions and receive simulated tutor responses.
+The main goal of **Study Sync** is to make academic organization easier for students by providing all essential productivity tools in one platform.
 
-For this version, a frontend/mock AI interaction is acceptable. do not use anything else
+Instead of managing studies through multiple applications, students can use Study Sync to:
 
-JAVASCRIPT FUNCTIONALITY
+**Plan → Organize → Study → Track → Improve**
 
-Use HTML, CSS, and JavaScript.
+---
 
-JavaScript should be used meaningfully but keep the implementation understandable and appropriate for a student web-development project.
+## 🌟 Conclusion
 
-Implement functionality such as:
+**Study Sync** combines academic management and personal productivity into one modern web application. With its organized dashboard, task management, exam tracking, study routines, focus tracking, and student-friendly interface, it provides a centralized solution for managing everyday academic activities.
 
-Adding and deleting tasks
+---
 
-Marking tasks as completed
+### 👨‍💻 Developed By
 
-Updating progress bars dynamically
+**M. Arhum Siddiqui & Mohammad Ayyan Imran**
 
-Study timers
-
-Syllabus progress tracking
-
-Reminders By Ringing Sound Or By Sending Notification
-
-Navigation between sections
-
-AI Tutor mock chat interaction
-
-Saving suitable user data with localStorage
-
-Do not make the website completely static.
-
-TECHNICAL REQUIREMENTS
-
-Use:
-
-HTML
-
-CSS JavaScript
-
-Prefer CSS Grid and Flexbox for layouts.
-
-Keep the code clean, readable, modular, and easy to understand.
-
-Use semantic HTML and meaningful class/variable names.
-
-Use CSS variables for the main design colors and reusable design values.
-
-Do not add unnecessary frameworks or complicated architecture.
-
-RESPONSIVE DESIGN
-
-The primary design target is mobile/dekstop.
-
-Make sure the application:
-
-Works properly on mobile screens/dekstop screens
-
-Adapts to tablets and desktop screens
-
-Does not overflow horizontally
-
-Maintains consistent spacing
-
-Keeps navigation usable on smaller screens
-
-PROJECT STRUCTURE
-
-Organize the project cleanly into HTML, CSS, JavaScript, and asset files.
-
-Keep reusable styles and JavaScript organized rather than putting everything into one huge file.
-
-IMPORTANT
-
-Do not create a generic dashboard template.
-
-The final product should feel like a real product called "Study Sync" designed specifically for students.
-
-Prioritize:
-
-Clean UI/UX
-
-Working JavaScript interactions
-
-Responsive design
-
-Consistent dark + Electric Blue visual system
-
-Glassmorphism styling
-
-Simple, understandable code
-
-A polished presentation suitable for a Web Development midterm project
-
-Build the application progressively and make sure each feature actually works rather than only creating visual placeholders.
-
-Note:the ai tutor will work like chat gpt and advance ai models the ai agent will be able to answer all questions of user like maths questions science related questions equations of motion and much more and also just use 'HTML" "CSS" "LITTLEJAVASCRIPT" and "TECHSTACK" and also add notifications of reminder if some stuff is not be able to do by 'HTML" "CSS" "LITTLEJAVASCRIPT" and "TECHSTACK" then just use these things to make it complete and look better and don't include Readme file in it
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/6586f4cd-0bf6-42ef-9943-3d9573cb1bf5).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+**Project:** Study Sync
+**Purpose:** Student Productivity & Academic Management
